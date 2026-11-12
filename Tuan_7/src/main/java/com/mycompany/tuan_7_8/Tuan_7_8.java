@@ -13,27 +13,28 @@ public class Tuan_7_8{
         danhSachSach = new ArrayList<>();
         
         Sach Toan = new Sach();
-        Toan.maSach = "001";
-        Toan.tieuDe = "Giai Tich";
-        Toan.tacGia = "Tran Duc Minh";
-        Toan.namXuatBan = 2025;
-        Toan.soLuong = 5;
+        // Sử dụng Setter thay vì gán trực tiếp do thuộc tính đã chuyển thành private
+        Toan.SetMaSach("001");
+        Toan.SetTieuDe("Giai Tich");
+        Toan.SetTacGia("Tran Duc Minh");
+        Toan.SetNamXuatBan(2025);
+        Toan.SetSoLuong(5);
         danhSachSach.add(Toan);
         
         Sach Ly = new Sach();
-        Ly.maSach = "002";
-        Ly.tieuDe = "Vat Ly Co Quang";
-        Ly.tacGia = "Nguyen Ngoc Khanh Han";
-        Ly.namXuatBan = 2024;
-        Ly.soLuong = 6;
+        Ly.SetMaSach("002");
+        Ly.SetTieuDe("Vat Ly Co Quang");
+        Ly.SetTacGia("Nguyen Ngoc Khanh Han");
+        Ly.SetNamXuatBan(2024);
+        Ly.SetSoLuong(6);
         danhSachSach.add(Ly);
         
         Sach Hoa = new Sach();
-        Hoa.maSach = "003";
-        Hoa.tieuDe = "Hoa Hoc Luong Tu";
-        Hoa.tacGia = "Nguyen Nhu Ngoc";
-        Hoa.namXuatBan = 2023;
-        Hoa.soLuong = 2;
+        Hoa.SetMaSach("003");
+        Hoa.SetTieuDe("Hoa Hoc Luong Tu");
+        Hoa.SetTacGia("Nguyen Nhu Ngoc");
+        Hoa.SetNamXuatBan(2023);
+        Hoa.SetSoLuong(2);
         danhSachSach.add(Hoa);
         
         Sach TiengAnh = new Sach("004", "Tieng Anh Co Ban", "Mr. Beast", 2022, 9);
